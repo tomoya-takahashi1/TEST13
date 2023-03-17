@@ -1,0 +1,280 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* fallback */
+  /* fallback */
+
+  .Navbar {
+    background-color: #1c1d3b;
+    height: 80px;
+}
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.Navbar {
+    background-color: #1c1d3b;
+    height: 80px;
+}
+.Navbar__logo {
+    width: 221px;
+}
+
+.NavProfile__avatar {
+    border-radius: 60px;
+    margin-right: 8px;
+    width: 40px;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+.NavProfile {
+    cursor: pointer;
+}
+
+
+.NavProfile__icon {
+    color: #fff;
+    stroke: #fff;
+    stroke-width: 2px;
+    width: 8px;
+}
+
+.NavProfile {
+    cursor: pointer;
+}
+
+.NavProfile__name {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+}
+
+
+
+.d-flex {
+    display: flex!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+
+.container, .container-fluid {
+    max-width: 1440px;
+    padding: 0 32px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dropdown, .dropend, .dropstart, .dropup {
+    position: relative;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 0;
+    margin-top: 0.125rem;
+}
+.DropdownMenu {
+    min-width: 122px;
+    padding: 9px 0;
+}
+ .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+
+h2, h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 39px;
+}
+h2 {
+    margin-bottom: 24px;
+}
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+}
+
+.AccountInformation {
+    background-color: #fff;
+    width: calc(100% - 32px);
+}
+
+.TabNavigation__item:first-of-type {
+    border-right: 1px solid #dfe2e6;
+}
+
+.TabNavigation__item {
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.TabNavigation__item.active>a {
+    color: #ff7757;
+}
+.TabNavigation__item>a {
+    color: #333;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.AccountInformation__header {
+    align-items: center;
+    border-bottom: 1px solid #dfe2e6;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+}
+
+@media screen and (max-width: 600px)
+{.AccountInformation__label {
+    margin-bottom: 8px;
+    width: 100%;
+}
+}
+.AccountInformation__label {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 25%;
+}
+
+@media screen and (max-width: 960px)
+{.TabNavigation__item {
+    padding: 16px;
+}
+}
+
+
+
+
+  
+.dropdown__lists {
+    display: none;/*デフォルトでは非表示の状態にしておく*/
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+.gnavi__list:hover .dropdown__lists {
+    display: block;/*Gナビメニューにホバーしたら表示*/
+}
+.dropdown__list {
+    background-color: #004d80;
+    height: 60px;
+    transition: all .3s;
+    position: relative;
+}
+.dropdown__list:not(:first-child)::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #3492d1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dropdown__list:hover {
+    background-color: #003558;
+}
+.dropdown__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.dropdown__list a::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(135deg);
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 5px);
+}
+.gnavi__wrap {
+    width: 1200px;
+    margin: right auto;
+}
+.gnavi__lists {
+    display: flex;
+}
+.gnavi__list {
+    width: 20%;
+    height: 60px;
+    background-color: #1c1d3b;;
+    position: relative;
+    transition: all .3s;
+    
+}
+.gnavi__list:hover {
+    background-color: #0071BB;
+}
+.gnavi__list:not(:first-child)::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+.gnavi__list:hover::before {
+    background-color: #0071BB;
+}
+.gnavi__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #1b4059;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    transition: all .3s;
+}
+.gnavi__list:hover a {
+    color: #fff;
+}

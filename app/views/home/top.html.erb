@@ -1,0 +1,102 @@
+<DOCTYPE html>
+<html>
+<header>
+  <nav class="navbar Navbar">
+    <div class="container-fluid">
+      <a href="/"><img class="Navbar__logo" alt="サイトロゴ" src="https://rails-02-sample.herokuapp.com/assets/common/logo.png"></a>
+      <div class="gnavi__wrap">
+      <ul class="gnavi__lists">
+          <li class="gnavi__list">
+          <img class="NavProfile__avatar" alt="アバター" src="https://rails-02-sample.herokuapp.com/assets/common/default-avatar-7a6cbfd7993e89f24bfc888f4a035a83c6f1428b8bdc47eed9095f2799a40153.png">
+  
+              <span class="nav-item d-sm-inline-block d-none NavProfile__name">
+                a
+              </span>
+  
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down NavProfile__icon" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+              </svg>
+             
+              <ul class="dropdown__lists">
+                  <li class="dropdown__list"><a href="#">施設の新規登録</a></li>
+                  <li class="dropdown__list"><a href="#">予約済み一覧</a></li>
+                  <li class="dropdown__list"><a href="#">登録済み一覧</a></li>
+                  <li class="dropdown__list"><a href="#">アカウント設定</a></li>
+                  <li class="dropdown__list"><a href="#">ログアウト</a></li>
+              </ul>
+          </li>
+          
+      </ul>
+  </div>
+        
+    </div>
+  </nav>
+</header>
+<body>
+
+
+<section class="container UserSection">
+  <h2>設定</h2>
+
+  <div class="UserContainer">
+    <ul class="SideNavigation">
+  <li class="SideNavigation__item ">
+    <a href="/users/account">アカウント</a>
+  </li>
+
+  <li class="SideNavigation__item active">
+    <a href="/users/profile">プロフィール</a>
+  </li>
+</ul>
+
+   
+</ul>
+
+      <div class="AccountInformation__header">
+        <h3>プロフィール</h3>
+
+        <a class="AccountInformation__link" href="/edit/">
+          <img alt="編集アイコン" src="https://rails-02-sample.herokuapp.com/assets/icons/edit-blue-51638a3e490277aa2df5f37102d45f5fcdfd8cd6c58fc5add90a958fab5c45af.svg">
+          編集   
+          </a>
+        </div>
+         
+      <div class="AccountInformation__input-group">
+        <label class="AccountInformation__label" for="image">アイコン画像</label>
+
+        <p class="AccountInformation__value AccountInformation__value--image">
+          <img alt="アイコン画像" src="https://rails-02-sample.herokuapp.com/assets/common/default-avatar-7a6cbfd7993e89f24bfc888f4a035a83c6f1428b8bdc47eed9095f2799a40153.png">
+        </p>
+      </div>
+
+      <div class="AccountInformation__input-group">
+        <label class="AccountInformation__label" for="name">名前</label>
+
+        <p class="AccountInformation__value">
+          a
+        </p>
+      </div>
+
+      <div class="AccountInformation__input-group">
+        <label class="AccountInformation__label" for="introduction">自己紹介</label>
+
+        <p class="AccountInformation__value">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="Footer">
+  <div class="container-fluid">
+    <a href="/"><img class="Footer__logo" alt="サイトロゴ" src="https://rails-02-sample.herokuapp.com/assets/common/logo.png"></a>
+
+    <p class="Footer__copyright">
+      Copyright © Potepan Share 2023 All rights reserved
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>
