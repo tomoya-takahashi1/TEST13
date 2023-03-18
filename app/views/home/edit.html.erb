@@ -1,1 +1,28 @@
-<h1>アカウント編集画面</h1>
+<h3>プロフィール</h3>
+
+<label class="FileUploadArea__label" for="user_image">
+              <span>画像アップロード</span>
+              <input type="file" name="user[image]" id="user_image">
+</label>
+
+<%= form_with model: @user do |f| %>
+  <table>
+    <tr>
+      <th><%= f.label :name ,"名前" %></th>
+      <td><%= f.text_field :name %></td>
+    </tr>
+    
+   
+    <tr>
+      <th><%= f.label :introduction ,"一言紹介" %></th>
+      <td><%= f.text_area :introduction %></td>
+    </tr>
+  </table>
+
+  <div>
+    <ul>
+      <li><%= f.submit "編集を完了する" %></li>
+      <li><%= link_to "キャンセル", :users %></li>
+    </ul>
+  </div>
+<% end %>

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'home/top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   devise_for :users
+  
 
   devise_scope :users do
     get '/users', to: redirect("/users/sign_up")
@@ -13,7 +14,8 @@ Rails.application.routes.draw do
   resources :users
 
   #アカウント編集画面用
-  get #'users/edit'
-   'home/edit'
+  get 'home/edit'
 
+  post 'users/edit' => 'users#updete'
+  
 end
