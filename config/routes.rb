@@ -8,14 +8,12 @@ Rails.application.routes.draw do
     get '/users', to: redirect("/users/sign_up")
   end
 
-  def edit
-    @user = User.find(params[:id])
-
-   end
-   
   
 
   resources :users
-  get 'home/edit'
+
+  #アカウント編集画面用
+  get #'users/edit'
+   'home/edit'
 
 end

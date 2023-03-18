@@ -2,10 +2,7 @@ class ApplicationController < ActionController::Base
 
     before_action :configure_permitted_parameters, if: :devise_controller?
 
-   def edit
-    @user = User.find(params[:id])
-
-   end
+   
   
     def after_sign_in_path_for(resource)
         home_top_path
